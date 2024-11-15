@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Session Management Demo">
+        <div class="slds-p-around_medium">
+            <div>
+                <lightning-button label="Get Session ID" onclick={getSessionId}></lightning-button>
+            </div>
+            <div if:true={sessionId}>
+                <p>Session ID: {sessionId}</p>
+            </div>
+        </div>
+    </lightning-card>
+</template>
